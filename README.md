@@ -1,4 +1,4 @@
-# Unity Game Development Portfolio
+# Unity Game Development Portfolio - Ramez Elobeid
 
 A comprehensive game development project showcasing proficiency in Unity Engine, C# programming, and software development best practices. This repository demonstrates object-oriented programming, game architecture design, and version control workflows.
 
