@@ -1,175 +1,115 @@
 # Unity Game Development Portfolio
 
-[![Unity Version](https://img.shields.io/badge/Unity-2022.3%20LTS-black.svg?style=flat&logo=unity)](https://unity3d.com/get-unity/download)
-[![C# Version](https://img.shields.io/badge/C%23-10.0-blue.svg?style=flat&logo=c-sharp)](https://docs.microsoft.com/en-us/dotnet/csharp/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-Cross--Platform-lightgrey.svg)](https://unity3d.com)
+A collection of Unity game prototypes built with Unity. This repository showcases four different games demonstrating various game development concepts and Unity features.
 
-A comprehensive Unity-based game development portfolio demonstrating advanced software engineering principles, modern C# programming practices, and professional game development workflows. This repository showcases multiple game prototypes with emphasis on clean architecture, performance optimization, and industry-standard development practices.
+## What I Built
 
-## 🎯 Overview
+I created four complete game prototypes using Unity 2022.3 LTS:
 
-This project serves as a technical demonstration of:
-- **Software Architecture**: Component-based design patterns and SOLID principles
-- **Performance Engineering**: Memory management, object pooling, and optimization techniques  
-- **DevOps Integration**: Automated workflows, version control, and CI/CD practices
-- **Cross-Platform Development**: Universal render pipeline and platform-agnostic code
+**Prototype 1: Vehicle Physics Simulator**
+- A 3D driving game with realistic vehicle physics
+- Player controls a car that can drive around a track
+- Features camera following, collision detection, and smooth movement
 
-## 🛠️ Technical Stack
+**Prototype 2: Animal Feeding Simulation**
+- A game where players feed animals that spawn randomly
+- Demonstrates object spawning, collision detection, and score tracking
+- Includes different animal types and food items
 
-| Category | Technology |
-|----------|------------|
-| **Game Engine** | Unity 2022.3 LTS |
-| **Programming Language** | C# 10.0 (.NET Standard 2.1) |
-| **Rendering Pipeline** | Universal Render Pipeline (URP) |
-| **Physics Engine** | Unity Physics / Havok |
-| **Input System** | Unity Input System 1.5+ |
-| **Version Control** | Git with LFS support |
-| **IDE/Editor** | Visual Studio / JetBrains Rider |
+**Prototype 3: Endless Runner**
+- A side-scrolling runner game with procedural obstacle generation
+- Player character that can jump and avoid obstacles
+- Features infinite scrolling and increasing difficulty
 
-## 📁 Project Structure
+**Prototype 4: Robot Chase Game**
+- A game where the player controls a robot collecting powerups
+- Includes enemy spawning, wave management, and powerup systems
+- Features health system and score tracking
+
+## Technologies Used
+
+**Game Engine & Development**
+- Unity 2022.3 LTS
+- C# programming language
+- Universal Render Pipeline (URP)
+- Unity Input System
+- Unity Physics engine
+
+**Web Deployment**
+- Unity WebGL build target
+- HTML5/CSS3 for web interface
+- GitHub Pages for hosting
+- GitHub Actions for automated deployment
+
+**Version Control & Collaboration**
+- Git for source control
+- GitHub for repository hosting
+- Automated deployment workflows
+
+## Project Structure
 
 ```
 Unity-Create-With-Code/
-├── Prototype 1/                    # Vehicle Control & Physics Demo
-│   ├── Assets/
-│   │   ├── Scripts/
-│   │   │   ├── PlayerController.cs    # Input handling & movement
-│   │   │   └── FollowPlayer.cs        # Camera follow system
-│   │   ├── Course Library/            # Modular asset collection
-│   │   └── Scenes/                    # Scene configurations
-│   ├── Packages/                      # Package dependencies
-│   └── ProjectSettings/               # Unity project configuration
-├── Prototype 2/                    # Animal Feeding Simulation
-├── Prototype 3/                    # Endless Runner with Procedural Generation
+├── Prototype 1/          # Vehicle driving game
+├── Prototype 2/          # Animal feeding game  
+├── Prototype 3/          # Endless runner game
+├── Prototype 4/          # Robot chase game
+├── web-showcase/         # Web deployment files
+│   ├── index.html        # Main game selection page
+│   ├── prototype1.html   # Individual game pages
+│   ├── prototype2.html
+│   ├── prototype3.html
+│   ├── prototype4.html
+│   └── builds/           # Unity WebGL builds
 └── README.md
 ```
 
-## 🎮 Game Prototypes
+## How to Run
 
-### Prototype 1: Vehicle Physics Simulator
-- **Focus**: 3D vehicle controls, camera systems, collision detection
-- **Technologies**: Rigidbody physics, transform manipulation, Unity events
-- **Key Features**: 
-  - Real-time physics simulation
-  - Dynamic camera following with smoothing
-  - Collision boundary management
+**Local Development**
+1. Clone this repository
+2. Open any prototype folder in Unity Hub
+3. Open the scene file and press Play
 
-### Prototype 2: Object Management System  
-- **Focus**: Instantiation patterns, collision detection, lifecycle management
-- **Technologies**: Object pooling, prefab systems, component architecture
-- **Key Features**:
-  - Memory-efficient object spawning
-  - Event-driven collision system
-  - Automated cleanup and bounds checking
+**Web Version**
+Visit the live website at: [https://relobeid.github.io/unity/](https://relobeid.github.io/unity/)
 
-### Prototype 3: Procedural Content Generation
-- **Focus**: Infinite scrolling, animation systems, game state management
-- **Technologies**: Coroutines, animation controllers, UI systems
-- **Key Features**:
-  - Procedural background generation
-  - State machine implementation
-  - Performance-optimized rendering
+## Key Features Implemented
 
-## 🔧 Development Setup
+**Game Mechanics**
+- Player input handling and movement systems
+- Physics-based interactions and collision detection
+- Object spawning and lifecycle management
+- Score tracking and game state management
 
-### Prerequisites
-```bash
-# Required software versions
-Unity Hub >= 3.4.0
-Unity Editor 2022.3 LTS
-Git >= 2.30.0
-.NET Framework 4.7.1+
-```
+**Technical Implementation**
+- Component-based architecture using Unity's GameObject system
+- Event-driven programming for game events
+- Performance optimization through object pooling
+- Responsive design for web deployment
 
-### Quick Start
-```bash
-# Clone repository with LFS support
-git clone https://github.com/yourusername/Unity-Create-With-Code.git
-cd Unity-Create-With-Code
+**Web Integration**
+- Unity WebGL builds for browser compatibility
+- Custom HTML interface with retro space theme
+- Responsive design for different screen sizes
+- Automated deployment to GitHub Pages
 
-# Open in Unity Hub
-unity-hub --projectPath "$(pwd)/Prototype 1"
+## Development Process
 
-# Alternative: Manual setup
-# 1. Launch Unity Hub
-# 2. Add project from disk
-# 3. Select desired prototype folder
-```
+This project was built following Unity's Create with Code course curriculum. Each prototype builds upon the previous one, introducing new concepts and expanding the player's understanding of game development fundamentals.
 
-### Build Configuration
-```bash
-# Development build
-Unity -batchmode -projectPath "Prototype 1" -buildTarget StandaloneWindows64
+The development process involved:
+- Learning Unity basics and C# programming
+- Implementing game mechanics step by step
+- Testing and debugging gameplay elements
+- Optimizing performance for web deployment
+- Creating a cohesive web interface for all games
 
-# Production build with optimizations
-Unity -batchmode -projectPath "Prototype 1" -buildTarget StandaloneWindows64 -releaseCodeOptimization
-```
+## Future Improvements
 
-## 💡 Key Engineering Concepts Demonstrated
-
-### Design Patterns
-- **Component Pattern**: Modular, reusable game object behaviors
-- **Observer Pattern**: Event-driven communication between systems
-- **Object Pool Pattern**: Memory management for frequently instantiated objects
-- **State Machine**: Game state and animation management
-
-### Performance Optimization
-- **Garbage Collection Management**: Reduced allocations in update loops
-- **Spatial Partitioning**: Efficient collision detection algorithms
-- **Level-of-Detail (LOD)**: Dynamic quality adjustment based on distance
-- **Asset Bundling**: Optimized resource loading and memory usage
-
-### Code Quality
-- **SOLID Principles**: Single responsibility, open/closed, dependency inversion
-- **Unit Testing**: Automated testing for critical game systems
-- **Code Documentation**: Comprehensive XML documentation
-- **Static Analysis**: Code quality enforcement with analyzers
-
-## 📊 Performance Metrics
-
-| Metric | Target | Achieved |
-|--------|--------|----------|
-| **Frame Rate** | 60 FPS | 60+ FPS |
-| **Memory Usage** | < 512 MB | ~400 MB |
-| **Load Time** | < 3 seconds | ~2.1 seconds |
-| **Build Size** | < 100 MB | ~85 MB |
-
-## 🚀 Deployment & CI/CD
-
-### Automated Workflows
-- **Continuous Integration**: Automated builds on commit
-- **Unit Testing**: Automated test execution
-- **Code Quality**: Static analysis and linting
-- **Multi-Platform Builds**: Windows, macOS, Linux targets
-
-### Platform Support
-- **Desktop**: Windows 10+, macOS 10.14+, Ubuntu 18.04+
-- **Mobile**: iOS 12+, Android API 21+ (planned)
-- **Web**: WebGL with modern browser support (planned)
-
-## 📈 Learning Outcomes & Professional Skills
-
-### Technical Competencies
-- Advanced C# programming with modern language features
-- Unity Engine mastery including editor scripting and custom tools
-- 3D mathematics and physics simulation implementation
-- Performance profiling and optimization techniques
-- Cross-platform development considerations
-
-### Software Engineering Practices
-- Agile development methodologies
-- Version control with branching strategies
-- Code review processes and quality assurance
-- Documentation and technical writing
-- Problem-solving and debugging methodologies
-
-## 🔗 Additional Resources
-
-- **Unity Documentation**: [Official Unity Manual](https://docs.unity3d.com/Manual/)
-- **C# Best Practices**: [Microsoft C# Guidelines](https://docs.microsoft.com/en-us/dotnet/csharp/)
-- **Game Development Patterns**: [Game Programming Patterns](https://gameprogrammingpatterns.com/)
-
----
-
-*This repository demonstrates practical application of enterprise-level software engineering principles in interactive media development, showcasing both technical proficiency and professional development practices.*
+Potential enhancements for these prototypes include:
+- Sound effects and background music
+- More complex enemy AI behaviors
+- Additional powerup types and effects
+- Level progression systems
+- Mobile touch controls for web version
